@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>K ABOKOSEM SDG ADMINS PAGE</title>
+	<link rel="stylesheet" type="text/css" href="css/stylesheet1.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+
+<body>
+
+	<div id="header">
+		<div id="logo">K ABOKOSEM SDG CLUB</div>
+		<nav id="nav-btn">
+		<button><i class="fa fa-plus-circle"></i> HELP</button>
+		<button><i class="fa fa-envelope"></i> ADMIN CHAT</button>
+		<button><i class="fa fa-power-off"></i> LOGOUT</button>
+	</div>
+	<div class="body">
+		<center>
+			<input type="number" placeholder="ENTER ACCOUNT NUMBER HERE" id="accnum"><input type="submit" name="submit" value="CHECK ACCOUNT" id="acc-btn">
+		</center>
+		<div id="Showdet">
+			<center><i class="fa fa-cogs"></i> USER DETAIL CHECKER</center>
+			<br>
+			<p>Card Owner: <span class="sql-ans">{{Full Name}}</span></p>
+			<p>Address: <span class="sql-ans">{{Addresss}}</span></p>
+			<p>Card Balance: <span class="sql-ans">{{Balance}}</span></p>
+			<p>Points: <span class="sql-ans">{{Point}}</span><p>
+			<p>Password: <button id="pass" style="background-color: inherit; color: #ddd;"><b>SHOW PASSWORD</b></button><p>
+			<br>
+			<button id="deposit">LOAD</button><button id="back">BACK</button>
+		</div>
+		<div id="dash">
+			<center style="font-size: 14pt;font-weight: bold;margin-top: 20px;">K ABOKOSEM SDG CLUB SYSTEM DASHBOARD</center>
+			<div id="box">
+				<h2 align="center"><i class="fa fa-users fa-fw"></i> USERS</h2>
+				<h3 align="center">50</h3>
+			</div>
+			<div id="box">
+				<h2 align="center"><i class="fa fa-diamond fa-fw"></i> ORDERS</h2>
+				<h3 align="center">100</h3>
+			</div>
+			<div id="box">
+				<h2 align="center"><i class="fa fa-thumbs-o-up"></i> VOTES</h2>
+				<h3 align="center">500</h3>
+			</div>
+			<BR>
+		</div>
+		<div id="dash">
+			<center style="font-size: 14pt;font-weight: bold;">VIEW/EDIT USER SETTING</center>
+			<div id="box">
+				<h2 align="center"><i class="fa fa-check"></i> CHECK USER INFO</h2>
+				<h3 align="center"><button>CHECK</button></h3>
+			</div>
+			<div id="box">
+				<h2 align="center"><i class="fa fa-eraser"></i>  CHANGE USER DETAILS</h2>
+				<h3 align="center"><button>CHANGE</button></h3>
+			</div>
+			<div id="box">
+				<h2 align="center"><i class="fa fa-lock"></i> REPORT OR BLACKLIST USER</h2>
+				<h3 align="center"><button>REPORT</button></h3>
+			</div>
+		</div>
+		<div id="chat">
+			<div class="chat-header">K ABOKOSEM SDG CLUB SECURE CHAT<div id="closechat" onclick="closechat()"><i class="fa fa-times-circle-o"></i></div>
+			<div id="showmsgs"></div>
+			<div id="msgsend-box"><textarea id="msg-text"></textarea><button id="sendbtn-send"><i class="fa fa-paper-plane"></i></button></div>
+		</div>
+		</div>
+		<div id="chat-btn">
+			<button style="background-color: inherit;" onclick="openchat()"><i class="fa fa-comments-o"></i></button>
+		</div>
+	</div>
+</body>
+</body>
+</html>

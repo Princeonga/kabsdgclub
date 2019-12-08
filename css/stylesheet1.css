@@ -1,0 +1,233 @@
+html,body{
+	background-color: #eee;
+	margin:0px;
+}
+
+*{
+	border:0px;
+	font-family: courier;
+	font-size: 95%;
+}
+
+#header{
+	width: 100%;
+	top:0px;
+	background-color: #000;
+	position: fixed;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.body{
+	margin-top: 50px;
+}
+
+#nav-btn{
+	float:right;
+}
+
+#nav-btn button{
+	background-color: inherit;
+	color:#888;
+	margin-right: 10px;
+}
+#nav-btn button:hover{
+	color:#ccc;
+}
+#logo{
+	float:left;
+	color:#ccc;
+	margin-left: 20px;
+}
+#accnum{
+	width:60%;
+	margin-top: 10px;
+	height: 30px;
+}
+#acc-btn{
+	height:31px;
+}
+#showdet{
+	margin:10px;
+}
+#deposit{
+	width:50%;
+	float:left;
+	height:50px;
+	background-color: green;
+}
+#con{
+	width:50%;
+	float:left;
+	height:50px;
+	background-color: green;
+}
+#back{
+	width:50%;
+	float: left;
+	height:50px;
+	background-color: red;
+}
+
+#Showdet{
+	width:32%;
+	height: 42%;
+	padding:20px;
+	display: none;
+	background-color: #111;
+	top:0px;
+	color:#888;
+	right:0px;
+	bottom: 0px;
+	left:0px;
+	margin: auto;
+	position: fixed;
+}
+#Showdet2{
+	width:32%;
+	height: 42%;
+	padding:20px;
+	display: none;
+	background-color: #111;
+	top:0px;
+	color:#888;
+	right:0px;
+	bottom: 0px;
+	left:0px;
+	margin: auto;
+	position: fixed;
+}
+#Showdet3{
+	width:32%;
+	height: 42%;
+	padding:20px;
+	display: none;
+	background-color: #111;
+	top:0px;
+	color:#888;
+	right:0px;
+	bottom: 0px;
+	left:0px;
+	margin: auto;
+	position: fixed;
+}
+
+.sql-ans{
+	color:#ddd;
+}
+#box{
+	width:30%;
+	padding:10px;
+	margin-top: 20px;
+	margin-left: 1%;
+	color:#888;
+	background-color: #222;
+	border-left: 5px solid green;
+	border-radius: 5px 0 0 5px;
+	padding:10px;
+	float: left;
+}
+#box:hover{
+	color:#ccc;
+}
+#dash{
+	width: 100%;
+	float: left;
+	margin-bottom: 50px;
+}
+#chat{
+	width:350px;
+	height: 450px;
+	position: fixed;
+	background-color: none;
+	bottom: 60px;
+	right:30px;
+	border:1px solid #000;
+	display: none;
+}
+#chat-btn{
+	width:30px;
+	height: 30px;
+	position: fixed;
+	background-color: inherit;
+	bottom: 30px;
+	right:50px;
+	font-size: 50px;
+}
+.chat-header{
+	width:100%;
+	border-bottom: 1px solid #333;
+	background-color: #111;
+	color: #888;
+	float: left;
+}
+#closechat{
+	float:right;
+	font-weight: bold;
+	font-size: 14pt;
+}
+#closechat:hover{
+	color:red;
+}
+#showmsgs{
+	width:100%;
+	height:390px;
+	background-color: #eee;
+	float: left;
+}
+#msgsend-box{
+	width:100%;
+	height: 37px;
+	color:#888;
+	background-color: #111;
+}
+#msg-text{
+	width:70%;
+	height: 33px;
+	margin-top: 1px;
+	float: left;
+	resize: none;
+}
+#sendbtn-send{
+	width:28%;
+	height: 100%;
+	float: left;
+	margin-top: 1px;
+	margin-left: 2px;
+}
+#calculator{
+	width:32%;
+	height: 42%;
+	padding:20px;
+	display: none;
+	background-color: #111;
+	top:0px;
+	color:#888;
+	right:0px;
+	bottom: 0px;
+	left:0px;
+	margin: auto;
+	position: fixed;
+}
+#fnum{
+	width:70%;
+	height: 25px;
+	font-size: 14pt;
+	margin-top: 10px;
+}
+#lnum{
+	width:70%;
+	height: 25px;
+	font-size: 14pt;
+	margin-top: 10px;
+}
+#result{
+	width: 100%;
+	height: 30px;
+	font-size: 15pt;
+	text-align: center;
+	margin-bottom: 10px;
+}
+#calbtn{
+	margin-bottom: 10px;
+}

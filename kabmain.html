@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>K ABOKOSEM SDG</title>
+	<link rel="stylesheet" type="text/css" href="css/stylesheet1.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" type="jpg/png" href="images/logo.png" />
+	<meta name="author" content="Joseph Owusu">
+</head>
+<body>
+
+<body>
+	<div id="header">
+		<div id="logo">K ABOKOSEM SDG CLUB ADMIN</div>
+		<nav id="nav-btn">
+		<button><i class="fa fa-plus-circle"></i> HELP</button>
+		<button><i class="fa fa-envelope"></i> ADMIN CHAT</button>
+		<button id="cal"><i class="fas fa-calculator"></i> CALCULATOR</button>
+		<button><i class="fa fa-power-off"></i> LOGOUT</button>
+	</div>
+	<div class="body">
+		<center>
+			<input type="number" placeholder="ENTER ACCOUNT NUMBER HERE.." id="accnum" title="Type User Account number here"><input type="submit" name="submit" value="CHECK ACCOUNT" id="acc-btn">
+		</center>
+		<div id="Showdet">
+			<center><i class="fa fa-cogs"></i> USER DETAIL CHECKER</center>
+			<br><input type="number" name="userid" title="USERID" style="width: 100%;height:30px;"><br>
+			<p>Card Owner: <span class="sql-ans">{{Full Name}}</span></p>
+			<p>Address: <span class="sql-ans">{{Addresss}}</span></p>
+			<p>Card Balance: <span class="sql-ans">{{Balance}}</span></p>
+			<p>Points: <span class="sql-ans">{{Point}}</span><p>
+			<p>Password: <button id="pass" style="background-color: inherit; color: #ddd;border:1px solid blue;"><b>SHOW PASSWORD</b></button><p>
+			<br>
+			<button id="deposit">LOAD</button><button id="back" onclick="back()">BACK</button>
+		</div>
+		<div id="Showdet2">
+			<center><i class="fa fa-cogs"></i> CHANGE USER INFO</center>
+			<br><input type="number" name="userid" title="USERID" style="width: 100%;height:30px;"><br>
+			<button id="deposit">CHANGE</button><button id="back" onclick="back2()">BACK</button>
+		</div>
+		<div id="calculator">
+			<center><i class="fa fa-calculator"></i> SYSTEM CALCULATOR</center>
+			<center>
+				<select id="operator" style="margin-top: 5px;">
+					<option value="1">ADDITION</option>
+					<option value="2">SUBSTRUCTION</option>
+					<option value="3">MULTIPLICATION</option>
+					<option value="4">DIVISION</option>
+				</select>
+			</center>
+			<label>FIRST NUMBER: </label><input type="number" id="fnum">
+			<label>LAST NUMBER: </label><input type="number" id="lnum"><br>
+			<center><button id="calbtn" style="margin-top: 10px;width:80%;height: 25px;">ANSWER</button></center><br>
+			<div id="result"></div>
+			<button id="con">continue</button><button id="back" onclick="back4()">BACK</button>
+		</div>
+		<div id="Showdet3">
+			<center><i class="fa fa-cogs"></i> REPORT USER</center>
+			<br><input type="number" name="userid" title="USERID" style="width: 100%;height:30px;"><br>
+			<button id="deposit">REPORT</button><button id="back" onclick="back3()">BACK</button><br>
+			<button id="deposit" style="width:100%;background-color: orangered;margin-top: 10px;">BLOCK USER</button>
+		</div>
+		<div id="dash">
+			<center style="font-size: 14pt;font-weight: bold;margin-top: 20px;">K ABOKOSEM SDG CLUB SYSTEM DASHBOARD</center>
+			<div id="box">
+				<h2 align="center"><i class="fa fa-users fa-fw"></i> USERS</h2>
+				<h3 align="center">50</h3>
+			</div>
+			<div id="box">
+				<h2 align="center"><i class="fa fa-diamond fa-fw"></i> ORDERS</h2>
+				<h3 align="center">100</h3>
+			</div>
+			<div id="box">
+				<h2 align="center"><i class="fa fa-thumbs-o-up"></i> VOTES</h2>
+				<h3 align="center">500</h3>
+			</div>
+			<BR>
+		</div>
+		<div id="dash">
+			<center style="font-size: 14pt;font-weight: bold;">VIEW/EDIT USER SETTING</center>
+			<div id="box">
+				<h2 align="center"><i class="fa fa-check"></i> CHECK USER INFO</h2>
+				<h3 align="center"><button id="checkinfo">CHECK</button></h3>
+			</div>
+			<div id="box">
+				<h2 align="center"><i class="fa fa-eraser"></i>  CHANGE USER DETAILS</h2>
+				<h3 align="center"><button id="changeinfo">CHANGE</button></h3>
+			</div>
+			<div id="box">
+				<h2 align="center"><i class="fa fa-lock"></i> REPORT OR BLACKLIST USER</h2>
+				<h3 align="center"><button id="reportuser">REPORT</button></h3>
+			</div>
+		</div>
+		<div id="chat">
+			<div class="chat-header">K ABOKOSEM SDG CLUB SECURE CHAT<div id="closechat" onclick="closechat()"><i class="fa fa-times-circle-o"></i></div>
+			<div id="showmsgs"></div>
+			<div id="msgsend-box"><textarea id="msg-text"></textarea><button id="sendbtn-send"><i class="fa fa-paper-plane"></i></button></div>
+		</div>
+		</div>
+		<div id="chat-btn">
+			<button style="background-color: inherit;" onclick="openchat()"><i class="fa fa-comments-o"></i></button>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</body>
+</html>
